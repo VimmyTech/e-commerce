@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" href="style.css">
+<head>
+	<title>check again</title>
+</head>
+<body>
+	<div class="form-btn">
+			<span onclick="login()">Login</span>
+			<span onclick="register()">Register</span>
+			<hr id="Indicator">
+	</div>
+	<script>	
+		var LoginForm = document.getElementByID("LoginForm");
+		var RegForm = document.getElementByID("RegForm");
+		var Indicator = document.getElementByID("Indicator");
+		function register(){
+				RegForm.style.transform = "translateX(0px)";
+				LoginForm.style.transform = "translateX(0px)";
+				Indicator.style.transform = "translateX(100px)";
+		};
+			
+		function login(){
+				RegForm.style.transform = "translateX(300px)";
+				LoginForm.style.transform = "translateX(300px)";
+				Indicator.style.transform = "translateX(0px)";
+		};
+	</script>
+
+</body>
+</html>
